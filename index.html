@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng Faris Selim | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    
+    <style>
+        :root {
+            --primary-color: #ffffff;
+            --accent-color: #00ff88;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primary-color);
+            background: #050505;
+            overflow-x: hidden;
+        }
+
+        .bg-blur {
+            position: fixed;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070') center/cover;
+            filter: blur(30px) brightness(0.25);
+            z-index: -1;
+            transform: scale(1.1);
+        }
+
+        .container {
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            padding: 45px 25px;
+            border-radius: 35px;
+            text-align: center;
+            width: 90%;
+            max-width: 380px;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+            border: 1px solid var(--glass-border);
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 2px solid var(--accent-color);
+            padding: 5px; /* مسافة بين الصورة والإطار الملون */
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 0.8rem;
+            color: #888;
+            margin: 8px 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* --- قسم الإيميل المكتوب بشكل مميز --- */
+        .email-display {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+        }
+
+        .email-label {
+            font-size: 0.65rem;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .email-text {
+            font-size: 0.95rem;
+            color: #fff;
+            text-decoration: none;
+            word-break: break-all;
+            font-weight: 400;
+        }
+
+        /* --- الأزرار الأخرى --- */
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        a.btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px;
+            border-radius: 14px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            font-size: 0.9rem;
+        }
+
+        a.btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        a.btn i { font-size: 1.1rem; width: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-blur"></div>
+
+    <div class="container">
+        <img src="https://i.ibb.co/bgNY8Xwv/profile-jpg.jpg" alt="Eng Faris Selim" class="profile-img">
+
+        <h1>Eng Faris Selim</h1>
+        <div class="subtitle">Cyber Security Student</div>
+
+        <div class="email-display">
+            <span class="email-label">OFFICIAL EMAIL</span>
+            <a href="mailto:farisselim333@gmail.com" class="email-text">farisselim333@gmail.com</a>
+        </div>
+
+        <div class="links-grid">
+            <a href="https://www.linkedin.com/in/faris-selim33" target="_blank" class="btn">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a href="https://wa.me/201208893022" target="_blank" class="btn">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="https://www.tiktok.com/@farisselim3" target="_blank" class="btn">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+
+            <a href="https://www.facebook.com/faris.selim.14" target="_blank" class="btn">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+
+            <a href="https://www.instagram.com/faris_selim33" target="_blank" class="btn">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
